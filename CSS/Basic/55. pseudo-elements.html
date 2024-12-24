@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elements</title>
+    <style>
+        /* A CSS pseudo-element is used to style specific parts of an element.
+
+        For example, it can be used to:
+
+        Style the first letter or line, of an element
+        Insert content before or after an element
+        Style the markers of list items
+        Style the viewbox behind a dialog box */
+
+        p.demo::first-line{
+            color: red;
+            font-variant: small-caps;
+        }
+
+        .one::first-letter{
+            color: white;
+            background-color: black;
+        }
+
+        .a::before{
+            content: "welcome";
+            color: brown;
+        }
+
+        .a::after{
+            content: "friends";
+            color: rgb(3, 243, 15);
+            font-size: medium;
+        }
+
+        div::selection{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="demo">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+    <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis perferendis mollitia rem fugit cum? Ipsam quidem, cum, aperiam nemo assumenda amet deserunt voluptatum, asperiores laboriosam odio aspernatur expedita quisquam. Et!</p>
+
+    <h1 class="a">Hello</h1>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsam perspiciatis quam impedit animi delectus reiciendis cum. Nemo, molestias dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ea sunt ipsum saepe ut debitis hic qui. At facilis earum eveniet! Sint, aliquid cumque? Dolor quisquam explicabo sunt excepturi quos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ullam eius, facere fugiat totam veritatis quaerat ratione dolorum porro rem eaque, recusandae delectus hic quas! Reprehenderit pariatur repudiandae culpa rerum.</div>
+
+
+
+
+<!-- 
+    
+Pseudo-element	            Example	                    Example description
+::after	                    p::after, div::after	    Inserts something after the content of the specified element
+::backdrop	                dialog::backdrop	        Styles the viewbox behind a dialog box or popover element
+::before	                p::before, div::before	    Inserts something before the content of the specified element
+::file-selector-button      ::file-selector-button	    Selects any button of type <input type="file">
+::first-letter	            p::first-letter	            Selects the first letter of every <p> element
+::first-line	            p::first-line	            Selects the first line of every <p> element
+::grammar-error	            ::grammar-error	            Styles a text that the browser has flagged as grammatically incorrect
+::highlight()	            ::highlight(custom-name)	Selects a custom highlight
+::marker	                ::marker	                Selects the markers of list items
+::placeholder	            input::placeholder          Styles the placeholder text of <input> or <textarea> elements
+::selection	                ::selection	                Styles the user-selected text
+::spelling-error	        ::spelling-error	        Styles a text that the browser has flagged as incorrectly spelled
+::view-transition	        ::view-transition	        Represents the root of the view transitions overlay, which contains all view transition on the page
+::view-transition-group	    ::view-transition-group	    Represents a single view transition snapshot group
+::view-transition-image-pair::view-transition-image-pairRepresents a container for a view transition's "old" and "new" view states - before and after the transition
+::view-transition-new	    ::view-transition-new	    Represents the "new" view state of a view transition
+::view-transition-old	    ::view-transition-old	    Represents the "old" view state of a view transition
+    
+-->
+</body>
+
+</html>

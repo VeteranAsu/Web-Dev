@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration</title>
+    <style>
+        /* text-decoration-line
+        text-decoration-color
+        text-decoration-style
+        text-decoration-thickness
+        text-decoration */ 
+        
+        /* The text-decoration-line property is used to add a decoration line to text. */
+        
+        .a{
+            text-decoration-line: overline;
+        }
+
+        .b{
+            text-decoration-line: line-through;
+        }
+
+        .c{
+            text-decoration-line: underline;
+        }
+
+        .d{
+            text-decoration-line: overline underline;
+        }
+
+
+
+        /* The text-decoration-color property is used to set the color of the decoration line. */
+
+        .e{
+            text-decoration-line: overline;
+            text-decoration-color: red;
+        }
+
+        .f{
+            text-decoration-line: line-through;
+            text-decoration-color: green;
+        }
+
+
+
+
+        /* The text-decoration-style property is used to set the style of the decoration line. */
+
+        .g {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+        }
+
+        .h {
+            text-decoration-line: underline;
+            text-decoration-style: double;
+        }
+
+        .i {
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+        }
+
+        .j {
+            text-decoration-line: underline;
+            text-decoration-style: dashed;
+        }
+
+        .k {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+
+        .l {
+            text-decoration-line: underline;
+            text-decoration-color: red;
+            text-decoration-style: wavy;
+        }
+
+
+
+
+        /* The text-decoration-thickness property is used to set the thickness of the decoration line. */
+
+        .m {
+            text-decoration-line: underline;
+            text-decoration-thickness: auto;
+        }
+
+        .n {
+            text-decoration-line: underline;
+            text-decoration-thickness: 5px;
+        }
+
+        .o {
+            text-decoration-line: underline;
+            text-decoration-thickness: 25%;
+        }
+
+        .p {
+            text-decoration-line: underline;
+            text-decoration-color: red;
+            text-decoration-style: double;
+            text-decoration-thickness: 5px;
+        }
+
+
+
+
+
+        /* The text-decoration property is a shorthand property for:
+        text-decoration-line (required)
+        text-decoration-color (optional)
+        text-decoration-style (optional)
+        text-decoration-thickness (optional) */
+
+        .q {
+            text-decoration: underline;
+        }
+
+        .r {
+            text-decoration: underline red;
+        }
+
+        .s {
+            text-decoration: underline red double;
+        }
+
+        .t {
+            text-decoration: underline red double 5px;
+        }
+
+
+
+        /* All links in HTML are underlined by default. Sometimes you see that links are styled with no underline. The text-decoration: none; is used to remove the underline from links. */
+
+        .link{
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="a">overline</h1>
+    <h1 class="b">line-through</h1>
+    <h1 class="c">underline</h1>
+    <h1 class="d">overline and underline</h1>
+
+    <h1 class="e">red</h1>
+    <h1 class="f">green</h1>
+
+    <h1 class="g">solid</h1>
+    <h1 class="h">double</h1>
+    <h1 class="i">dotted</h1>
+    <h1 class="j">dashed</h1>
+    <h1 class="k">wavy</h1>
+    <h1 class="l">red wavy</h1>
+
+    <h1 class="m">thickness</h1>
+    <h1 class="n">thickness</h1>
+    <h1 class="o">thickness</h1>
+    <h1 class="p">thickness</h1>
+
+    <h1 class="q">shorthand</h1>
+    <h1 class="r">shorthand</h1>
+    <h1 class="s">shorthand</h1>
+    <h1 class="t">shorthand</h1>
+
+    <a href="www.youtube.com" class="link">Youtube</a>
+</body>
+</html>

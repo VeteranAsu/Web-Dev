@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-color</title>
+    <style>
+        p.one{
+            border-style: solid;
+            border-color: red;
+        }
+        p.two{
+            border-style: solid;
+            border-color: green;
+        }
+        p.three{
+            border-style: dotted;
+            border-color: blue; /* blue on all sides */
+        }
+        p.five{
+            border-style: solid;
+            border-color: red green; /* red top and bottom, green on the sides */
+        }
+        p.six{
+            border-style: solid;
+            border-color: red blue green ; /* red top, blue both sides, green bottom */
+        }
+        p.seven{
+            border-style: solid;
+            border-color: red green blue yellow;  /* red top, blue right, green bottom and yellow left */
+        }
+    </style>
+</head>
+<body>
+    <p class="one">red border</p>
+    <p class="two">green border</p>
+    <p class="three">blue border</p>
+    <p class="five">double</p>
+    <p class="six">triple</p>
+    <p class="seven">quadraple</p>
+</body>
+</html>

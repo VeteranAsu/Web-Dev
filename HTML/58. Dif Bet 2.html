@@ -1,0 +1,41 @@
+
+<!-- Difference Between <meter> and <progress> -->
+
+<!-- The <meter> and <progress> tags in HTML serve different purposes, even though they might seem similar at first glance. Here’s a concise comparison: -->
+
+        <!-- <meter> Tag
+        Purpose: Represents a scalar measurement within a known range, often referred to as a gauge.
+        Use Cases: Displaying disk usage, battery level, or any other measurement within a range.
+        Attributes:
+        value: Specifies the current value.
+        min: Specifies the minimum value (default is 0).
+        max: Specifies the maximum value.
+        low: Specifies a range considered to be a low value.
+        high: Specifies a range considered to be a high value.
+        optimum: Specifies the optimal value.
+        form: Associates the meter with a form. -->
+
+        <meter value="0.6" min="0" max="1">60%</meter>
+        
+
+
+
+        
+        <!-- <progress> Tag
+        Purpose: Represents the progress of a task, such as a download or file upload.
+        Use Cases: Showing the completion status of a task.
+        Attributes:
+        value: Specifies how much of the task has been completed.
+        max: Specifies the total amount of work (default is 1). -->
+
+        <progress value="70" max="100">70%</progress>
+        
+
+
+
+
+
+        <!-- Key Differences:
+        Functionality: <meter> is for measurements within a range, while <progress> is for task completion.
+        Attributes: <meter> has more attributes to define ranges and optimal values, whereas <progress> focuses on the completion value and maximum. -->
+    

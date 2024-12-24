@@ -1,0 +1,46 @@
+<!-- Difference between <canvas> and <svg> tag in html -->
+
+<!-- The <canvas> and <svg> tags in HTML are both used for drawing graphics, but they have different use cases and underlying technologies. Here’s a comparison to help you understand their differences:
+
+<canvas> Tag
+Type: Raster-based (pixel-based).
+Rendering: Uses JavaScript to draw graphics on the fly.
+Performance: Better for dynamic, high-performance graphics like games and real-time visualizations.
+Scalability: Poor scalability; resizing can lead to pixelation.
+Manipulation: Graphics are drawn into a single canvas element and cannot be accessed or modified individually once drawn.
+Use Case: Ideal for complex animations, game graphics, and real-time data visualizations.
+
+
+
+<svg> Tag
+Type: Vector-based (shape-based).
+Rendering: Uses XML to define graphics.
+Performance: Better for static or less frequently changing graphics.
+Scalability: Excellent scalability; can be resized without loss of quality.
+Manipulation: Each element is part of the DOM and can be styled, scripted, and manipulated individually.
+Use Case: Ideal for logos, icons, and graphics that require high scalability and precision. -->
+
+
+
+
+<canvas id="myCanvas" width="200" height="200"></canvas>
+<script>
+  var canvas = document.getElementById('myCanvas');
+  var ctx = canvas.getContext('2d');
+  ctx.fillStyle = 'green';
+  ctx.fillRect(10, 10, 150, 100);
+</script>
+
+
+<svg width="200" height="200">
+  <rect x="10" y="10" width="150" height="100" fill="green" />
+</svg>
+
+
+
+
+<!-- Key Differences
+Scalability: SVG scales better than Canvas.
+Performance: Canvas is better for high-performance graphics.
+Manipulation: SVG elements can be manipulated individually, while Canvas elements cannot once drawn.
+Complexity: SVG is more suitable for simpler, static graphics, while Canvas is better for complex, dynamic graphics. -->

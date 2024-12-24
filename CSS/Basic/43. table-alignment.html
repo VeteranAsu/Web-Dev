@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-alignment</title>
+    <style>
+        /* text-align property */
+        table, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            text-align: center;
+        }
+
+
+        /* vertical-align property */
+        .one, .b, .c {
+            border: 1px solid black;
+        } 
+
+        .one{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .c{
+            height: 50px;
+            vertical-align: bottom;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <table class="one">
+        <tr class="a">
+          <th class="b">Firstname</th>
+          <th class="b">Lastname</th>
+          <th class="b">Savings</th>
+        </tr>
+        <tr class="a">
+          <td class="c">Peter</td>
+          <td class="c">Griffin</td>
+          <td class="c">$100</td>
+        </tr>
+        <tr class="a">
+          <td class="c">Lois</td>
+          <td class="c">Griffin</td>
+          <td class="c">$150</td>
+        </tr>
+        <tr class="a">
+          <td class="c">Joe</td>
+          <td class="c">Swanson</td>
+          <td class="c">$300</td>
+        </tr>
+        <tr class="a">
+          <td class="c">Cleveland</td>
+          <td class="c">Brown</td>
+          <td class="c">$250</td>
+        </tr>
+    </table>
+</body>
+</html>

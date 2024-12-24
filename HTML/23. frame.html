@@ -1,0 +1,58 @@
+<!-- HTML <frame> tag -->
+<!-- HTML <frame> tag define the particular area within an HTML file where another HTML web page can be displayed.
+
+A <frame> tag is used with <frameset>, and it divides a webpage into multiple sections or frames, and each frame can contain different web pages. -->
+
+<!-- While using <frame> tag do not use <body> tag. -->
+
+<!-- Note: Do not use HTML <frame> tag as it is not supported in HTML5, instead you can use <iframe> or <div> with CSS to achieve similar effects in HTML. -->
+
+<!-- Attribute	Value	    Description
+frameborder	    0 1	        It specifies whether to display a border around the frame or not, and its default value is 1
+longdsec	    URL	        It specifies a page which contains the long description of the content of the frame.
+marginheight	pixels	    It specifies the top and bottom margins of the frame.
+marginwidth	    pixels	    It defines the height of the margin between frames.
+name	        text	    It is used to assign the name to the frame.
+noresize	    noresize	It is used to prevent resizing of the frame by the user.
+scrolling	    yes no auto	It specifies the existence of the scrollbar for overflowing content.
+src	            URL	        It specifies the URL of the document which we want to display in a frame. -->
+
+
+
+
+
+<!-- HTML <noframes> tag -->
+<!-- HTML <noframes> tag is used to contain an alternative text to display if the browser does not support the <frame> content. It will only work, if the browser does not support the frame else, it will be ignored by the browser.
+
+The <noframes> tag should be used within <frameset> element. -->
+
+    
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frame</title>
+    <meta http-equiv="refresh" content="5">
+</head>
+    <frameset cols="50%, *">
+        <frameset rows="50%, *">
+            <frameset cols="50%, *">
+                <frame src="frame/frame1.html">
+                <frame src="frame/frame2.html">
+            </frameset>
+            <frame src="frame/frame3.html">
+        </frameset>
+        <frameset rows="33%, 33%, *">
+            <frame src="frame/frame4.html">
+            <frame src="frame/frame5.html">
+            <frame src="frame/frame6.html">
+        </frameset>
+    </frameset>
+<noframes>Sorry! Your browser does not support frames. </noframes>
+</html>
+
+
+

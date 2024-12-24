@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outline-color</title>
+    <style>
+        /* The color can be set by:
+        name - specify a color name, like "red"
+        HEX - specify a hex value, like "#ff0000"
+        RGB - specify a RGB value, like "rgb(255,0,0)"
+        HSL - specify a HSL value, like "hsl(0, 100%, 50%)"
+        invert - performs a color inversion (which ensures that the outline is visible, regardless of color background) */
+
+        p{
+            outline-width: 5px;
+        }
+        p.ex1 {
+        border: 2px solid black;
+        outline-style: solid;
+        outline-color: red;
+        }
+        p.ex2 {
+        outline-style: solid;
+        outline-color: #ff0000; /* red */
+        }
+
+        p.ex3 {
+        outline-style: solid;
+        outline-color: rgb(255, 0, 0); /* red */
+        }
+
+        p.ex4 {
+        outline-style: solid;
+        outline-color: hsl(0, 100%, 50%); /* red */
+        }
+    </style>
+
+</head>
+<body>
+    <p class="ex1">specific color</p>
+    <p class="ex2">HEX</p>
+    <p class="ex3">RGB</p>
+    <p class="ex4">HSL</p>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selector</title>
+    <style>
+        /* The [attribute] selector is used to select elements with a specified attribute. */
+        a[target] {
+            background: rgb(250, 152, 5);
+        }
+
+
+
+        /* The [attribute="value"] selector is used to select elements with a specified attribute and value. */
+        p[class="b"] {
+            background-color: yellow;
+        }
+
+
+
+        /* The [attribute~=(~ =)"value"] selector is used to select elements with an attribute value containing a specified word. */
+        img[title~="of"] {
+            border: 5px solid black;
+        }
+
+
+
+        /* The [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-). */
+        a[title|="best"] {
+            background-color: aqua;
+        }
+
+
+
+        /* The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts with the specified value. */
+        a[title^="world"] {
+            background-color: lightpink;
+        }
+
+
+
+        /* The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value. */
+        [class$="test"] {
+            background: yellow;
+        }
+
+
+
+        /* The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value. */
+        [class*="number"] {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://www.disney.com">disney.com</a> <br>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+
+
+
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quas recusandae exercitationem, unde
+        ad earum. Maxime quis itaque cumque provident doloribus accusamus nisi, recusandae esse dolores reiciendis
+        expedita vero nesciunt.</p>
+    <p class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam praesentium earum vero quasi nobis,
+        doloremque, atque ab facilis enim at ea? Repellendus, velit. Deleniti facere accusamus quidem ex quam optio.</p>
+    <p class="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, soluta ullam? Recusandae iusto
+        delectus assumenda quo. Nostrum ipsum, molestiae, quidem accusamus natus quibusdam aut doloribus laboriosam
+        aliquid tenetur, unde suscipit?</p>
+
+
+
+    <img src="gradient resize.jpg" alt="background" height="100px" title="mixing of color">
+    <img src="mercedes.jpg" alt="car" height="100px" title="a red mercedes car"> <br><br>
+
+
+
+    <a href="https://youtube.com" alt="youtube" title="best-videos-platform">youtube</a>
+    <a href="https://google.com" title="globa-web-browser">google</a> <br><br>
+
+
+
+    <a href="https://wikipedia.com" title="world of contents">wikipedia</a>
+
+
+
+
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p> <br><br>
+
+
+
+
+
+
+    <div class="element-number1">The first div element.</div>
+    <div class="div1">The second div element.</div>
+    <div class="element-number3">The third div element.</div>
+
+</body>
+
+</html>

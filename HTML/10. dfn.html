@@ -1,0 +1,25 @@
+<!-- HTML <dfn> Tag -->
+<!-- The <dfn> tag stands for the "definition element", and it specifies a term that is going to be defined within the content.
+
+The nearest parent of the <dfn> tag must also contain the definition/explanation for the term. -->
+
+<!-- The term inside the <dfn> tag can be any of the following -->
+
+<!-- 1. Just as the content of the <dfn> element: -->
+<p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+
+<!-- 2. Or, with the title attribute added: -->
+<p><dfn title="HyperText Markup Language">HTML</dfn> is the standard markup language for creating web pages.</p>
+
+
+<!-- 3. Or, with an <abbr> tag inside the <dfn> element: -->
+<p><dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> is the standard markup language for creating web pages.</p>
+
+
+<!-- 4. Or, with the id attribute added. Then, whenever a term is used, it can refer back to the definition with an <a> tag: -->
+<p><dfn id="html-def">HTML</dfn> is the standard markup language for creating web pages.</p>
+
+<p>This is some text...</p>
+<p>This is some text...</p>
+<p>Learn <a href="#html-def">HTML</a> now.</p>

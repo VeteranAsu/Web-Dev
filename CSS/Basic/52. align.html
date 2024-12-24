@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align</title>
+    <style>
+        .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        /* Note: Center aligning has no effect if the width property is not set (or set to 100%). */
+
+
+
+
+        .center1 {
+            text-align: center;
+            border: 3px solid green;
+        }
+
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+
+
+
+        .right1 {
+            float: right;
+            width: 300px;
+            border: 3px solid red;
+            padding: 10px;
+        }
+
+
+
+
+        .center2 {
+            padding: 70px 0;
+            border: 3px solid green;
+        }
+
+
+
+        .center3 {
+            padding: 70px 0;
+            border: 3px solid green;
+            text-align: center;
+        }
+
+
+
+        
+
+        .center4{
+            line-height: 200px;
+            height: 200px;
+            border: 3px solid green;
+            text-align: center;
+        }
+
+        .center4 p {
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Center Align Elements</h2>
+    <p>To horizontally center a block element (like div), use margin: auto;</p>
+
+    <div class="center">
+        <p>Hello World!</p>
+    </div>
+
+
+
+
+
+
+
+    <h2>Center Text</h2>
+
+    <div class="center1">
+        <p>This text is centered.</p>
+    </div>
+
+
+
+
+
+
+
+    <h2>Center an Image</h2>
+    <p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+    <img src="mercedes.jpg" alt="mercedes" style="width:40%">
+
+
+
+
+
+
+
+
+
+
+    <h2>Right align with the position property</h2>
+
+    <p>An example of how to right align elements with the position property:</p>
+
+    <div class="right">
+        <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind
+            ever since.</p>
+    </div>
+    <br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+    <h2>Right align with the float property</h2>
+
+    <p>An example of how to right align elements with the float property:</p>
+
+    <div class="right1">
+        <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind
+            ever since.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <h2 style="clear: right;">Center vertically with padding</h2>
+
+    <p>In this example, we use the padding property to center the div element vertically:</p>
+
+    <div class="center2">
+        <p>I am vertically centered.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <h2>Center with padding and text-align</h2>
+
+    <p>In this example, we use padding and text-align to center the div element both vertically and horizontally:</p>
+
+    <div class="center3">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+
+
+
+
+
+
+
+    <h2>Center with line-height</h2>
+
+    <p>In this example, we use the line-height property with a value that is equal to the height property to center the
+        div element:</p>
+
+    <div class="center4">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+</body>
+
+</html>

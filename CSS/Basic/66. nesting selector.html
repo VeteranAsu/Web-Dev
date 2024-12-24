@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS nesting</title>
+    <style>
+        .parent{
+            width: 40rem;
+            height: 40rem;
+            background-color: #9ac5f4;
+            border-radius: 10px;
+
+            .child1 {
+                width: 20rem;
+                height: 20rem;
+                background-color: #213555;
+                border-radius: 10px;
+
+                &:hover{
+                    background-color: #4f709c;
+                }
+            }
+
+            .child2 {
+                width: 10rem;
+                height: 10rem;
+                background-color: lightpink;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: aquamarine;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Nesting</h1>
+    <div class="parent">
+        <div class="child1">Like</div>
+        <div class="child2">Comment</div>
+    </div>
+</body>
+</html>

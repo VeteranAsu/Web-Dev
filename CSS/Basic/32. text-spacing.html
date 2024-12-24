@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-spacing</title>
+    <style>
+        /* text-indent
+        letter-spacing
+        line-height
+        word-spacing
+        white-space */
+
+        /* The text-indent property is used to specify the indentation of the first line of a text. */
+
+        p {
+            text-indent: 50px;
+        }
+
+
+
+        /* The letter-spacing property is used to specify the space between the characters in a text. */
+
+        h2 {
+            letter-spacing: 5px;
+        }
+
+        h3 {
+            letter-spacing: -2px;
+        }
+
+
+
+
+        /* The line-height property is used to specify the space between lines. */
+
+        p.small {
+            line-height: 0.8;
+        }
+
+        p.big {
+            line-height: 1.8;
+        }
+
+
+
+
+
+
+        /* The word-spacing property is used to specify the space between the words in a text. */
+
+        p.one {
+            word-spacing: 10px;
+        }
+
+        p.two {
+            word-spacing: -2px;
+        }
+
+
+
+
+        /* The white-space property specifies how white-space inside an element is handled. */
+
+        p.three{
+            white-space: normal;
+        }
+
+        p.four{
+            white-space: nowrap;
+        }
+
+        div{
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'Lorem ipsum dolor sit amet consectetur adipisicing elit. A architecto dolorum sunt, maxime iure suscipit obcaecati modi, perspiciatis illum molestias veniam, dicta quis minus. Consequatur numquam quam laborum sint facilis. Perspiciatis consequatur est quisquam incidunt quia. Similique aut totam nostrum neque, nisi aspernatur obcaecati sit dicta, voluptatem repellendus eos accusamus provident possimus ab, laudantium doloribus illo? Itaque nostrum consectetur quos a quaerat sapiente corrupti quidem modi eius placeat iste rem unde, inventore dignissimos ipsa distinctio amet sed? Rem voluptas, assumenda totam praesentium quia necessitatibus sit placeat possimus cum quaerat ratione, magni, error consectetur dolore. Deserunt minus recusandae minima maiores quasi?</p>
+
+
+    <h2>This is heading 1</h2>
+    <h3>This is heading 2</h3>
+
+
+
+    <p class="small">
+        This is a paragraph with a smaller line-height.<br>
+        This is a paragraph with a smaller line-height.<br>
+    </p>
+        
+    <p class="big">
+        This is a paragraph with a bigger line-height.<br>
+        This is a paragraph with a bigger line-height.<br>
+    </p>
+
+
+
+    <p class="one">This is a paragraph with larger word spacing.</p>
+    <p class="two">This is a paragraph with smaller word spacing.</p>
+
+
+
+    <p class="three">This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+    </p>
+    <p class="four">This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+    </p>
+
+    <div>Hello I      am     using                    CSS.</div>
+</body>
+</html>

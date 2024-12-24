@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!important</title>
+    <style>
+        #myid {
+            background-color: blue;
+        }
+
+        .myclass {
+            background-color: gray;
+        }
+
+        p {
+            background-color: red !important;
+        }
+
+
+
+
+        #heading {
+            background-color: blue !important;
+        }
+
+        .a {
+            background-color: cyan !important;
+        }
+
+        h2 {
+            background-color: green !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>What is !important?</h1>
+    <p>The !important rule in CSS is used to add more importance to a property/value than normal.</p>
+
+    <!-- In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element! -->
+
+    <p>This is some text in a paragraph</p>
+    <p class="myclass">This is some text in a paragraph.</p>
+    <p id="myid">This is some text in a paragraph.</p>
+
+
+
+    <h2>This is some heading</h2>
+    <h2 class="a">This is some heading</h2>
+    <h2 id="heading">This is some heading</h2>
+
+
+</body>
+
+</html>

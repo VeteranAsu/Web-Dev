@@ -1,0 +1,73 @@
+<!-- HTML URL -->
+<!-- A URL is another word of a web address.
+
+A URL can be composed of words (google.com), or an Internet Protocol (IP) address (e.g. 192.68.20.50)
+
+Most people enter the name when surfing, because names are easier to remember than numbers.
+-->
+
+
+<!-- URL - Uniform Resource Locator -->
+<!-- Web browsers request pages from web servers by using a URL.
+ 
+A URL is used to address a document(or other data) on the web. 
+
+syntax rules:
+scheme://prefix.domain:port/path/filename
+
+
+Explanation:
+scheme - defines the type of Internet service (most common is http or https)
+prefix - defines a domain prefix (default for http is www)
+domain - defines the Internet domain name (like w3schools.com)
+port - defines the port number at the host (default for http is 80)
+path - defines a path at the server (If omitted: the root directory of the site)
+filename - defines the name of a document or resource
+
+
+
+Common URL Schemes are:
+
+Scheme	    Short for	                        Used for
+http	    HyperText Transfer Protocol	        Common web pages. Not encrypted
+https	    Secure HyperText Transfer Protocol	Secure web pages. Encrypted
+ftp	        File Transfer Protocol	            Downloading or uploading files
+file	 	                                    A file on your computer
+
+
+
+
+URL Encoding for ASCII Characters
+Even though characters like @, #, and $ are part of the ASCII character set, they still need to be URL encoded in certain contexts. This is because some ASCII characters have special meanings in URLs and can affect how the URL is interpreted by web servers and browsers. Here’s why:
+
+Special Characters in URLs:
+Characters like @, #, and $ have specific roles in URLs:
+@ is used in email addresses within URLs.
+# is used to indicate a fragment identifier, which points to a specific section within a web page.
+$ can be used in query strings and has special meanings in some contexts.
+Encoding to Avoid Misinterpretation:
+To ensure these characters are not misinterpreted as part of the URL structure, they are percent-encoded.
+For example:
+@ becomes %40
+# becomes %23
+$ becomes %24
+
+URL Encoding for Non-ASCII Characters
+Non-ASCII characters, which fall outside the standard ASCII range (0-127), must be encoded to ensure they are correctly transmitted over the Internet. These characters include accented letters, symbols from other languages, and special characters.
+
+Why Encode ASCII Characters?
+Uniformity:
+Encoding ensures that URLs are uniformly interpreted across different systems and browsers.
+This uniformity is crucial for maintaining the integrity and functionality of web applications.
+Security:
+Encoding helps prevent security vulnerabilities by ensuring that special characters are treated as data rather than executable code.
+For example, encoding a single quote (') as %27 can help prevent SQL injection attacks.
+Example
+Consider the URL: https://example.com/search?q=hello@world#section
+
+If not encoded, the @ and # could be misinterpreted by the server.
+When URL encoded, it becomes: https://example.com/search?q=hello%40world%23section
+This ensures that the @ and # are treated as part of the query parameter and fragment identifier, respectively.
+
+Conclusion
+URL encoding is essential for both ASCII and non-ASCII characters to ensure that URLs are correctly interpreted and transmitted over the Internet. By encoding special characters, we maintain the integrity, security, and functionality of web applications.-->

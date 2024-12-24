@@ -1,0 +1,30 @@
+<!-- <Marquee> tag -->
+<!-- This tag in html used to create a scrolling text or image on a webpage. It allows content to move horizontally or vertically across the screen. It is depricated in HTML5. -->
+
+<!-- <marquee> attributes -->
+    <!--1. bgcolor: defines the background color of marquee
+        2. direction: defines the direction of scrolling content. Direction values are top, down, left, right.
+        3. loop: It specifies how many times content moves. Default value is infinite.
+        4. height: defines the height of marquee box. Values are specified using pixel or %.
+        5. width: defines the width of marquee box. Values are specified using pixel or %.
+        6. hspace: specifies horizontal space around marquee on webpage. That means from left and right margins where the marquee will start.
+        7. vspace: specifies the vertical space around marquee i.e top and bottom margin.
+        8. scrollamount: It controls the speed of scroll.
+        9. scrolldelay: set the delay between the scroll.
+        10. behavior: set the scrolling characteristics. It contains scroll, alternate and slide values.
+        11. color: set the text color of marquee.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marquee tag</title>
+</head>
+<body>
+    <marquee behavior="scroll" direction="right" height="50px" width="800px" scrollamount="20" bgcolor="red" color="white" hspace="100" vspace="500" loop="5">Marquee tag</marquee>
+</body>
+</html>
+
+<!-- You cannot use scrollamount and scrolldelay at a time. -->

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        h1{background-color: red;}
+        h1{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <h1>Specificity Hierarchy</h1>
+    <p>Every CSS selector has its place in the specificity hierarchy.
+
+        <!-- There are four categories which define the specificity level of a selector:
+        
+        Inline styles - Example: <h1 style="color: pink;">
+        IDs - Example: #navbar
+        Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+        Elements and pseudo-elements - Example: h1, ::before</p> -->
+
+    <p>Inline CSS has the highest priority, followed by internal CSS, and then external CSS. If you use all three, the styles in inline CSS will override internal and external CSS. Basically, the more specific the style declaration is, the higher its precedence.</p>
+
+    <!-- How to calculate Specificity -->
+     <!-- Start at 0, add 100 for each ID value, add 10 for each class value (or pseudo-class or attribute selector), add 1 for each element selector or pseudo-element. -->
+
+    <!-- Note: Inline style gets a specificity value of 1000, and is always given the highest priority! -->
+
+    <!-- Note: There is one exception to this rule: if you use the !important rule, it will even override inline styles! -->
+
+
+    <!-- 
+    Selector	        Specificity Value	    Calculation
+    p	                        1	                1
+    p.test	                    11	                1 + 10
+    p#demo	                    101	                1 + 100
+    <p style="color: pink;">	1000	            1000
+    #demo	                    100	                100
+    .test	                    10	                10
+    p.test1.test2	            21	                1 + 10 + 10
+    #navbar p#demo	            201	                100 + 1 + 100
+    *	                        0	                0 (the universal selector is ignored)
+    -->
+    <!-- The selector with the highest specificity value will win and take effect! -->
+
+
+    <!-- Equal specificity: the latest rule wins - If the same rule is written twice into the external style sheet, then the latest rule wins. -->
+
+    <!-- The universal selector (*) and inherited values have a specificity of 0 - The universal selector (*) and inherited values are ignored! -->
+
+    <h1>Equal Specificity</h1>
+</body>
+</html>

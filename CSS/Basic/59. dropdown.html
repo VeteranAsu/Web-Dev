@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: black;
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        ul li:hover {
+            background-color: green;
+            color: white;
+        }
+
+
+        .dropdown {
+            display: block;
+            position: absolute;
+            margin-left: -0.28cm;
+            margin-top: 0.27cm;
+        }
+
+        .dropdown ul li {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+        }
+
+        ul li:hover .dropdown {
+            display: block;
+            position: absolute;
+            margin-left: -0.28cm;
+            margin-top: 0.27cm;
+
+        }
+
+
+        .drpdn2{
+            display: block;
+            position: absolute;
+            margin-top: -0.75cm;
+            margin-left: 3.75cm;
+        }
+
+        .drpdn2{
+            display: none;
+        }
+
+        ul.a li:hover .drpdn2{
+            display: block;
+            position: absolute;
+            margin-top: -0.75cm;
+            margin-left: 3.75cm;
+        }
+
+        .a li:hover{
+            background-color: red;
+            color: white;
+        }
+
+        .b li:hover{
+            background-color: rgb(226, 13, 198);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Courses
+                <div class="dropdown">
+                    <ul class="a">
+                        <li>Spoken</li>
+                        <li>Computer Software
+                            <div class="drpdn2">
+                                <ul class="b">
+                                    <li>DCA</li>
+                                    <li>ADCA</li>
+                                    <li>Programming</li>
+                                    <li>HTML</li>
+                                    <li>Java</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>Computer Hardware</li>
+                        <li>Coaching</li>
+                    </ul>
+                </div>
+            </li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+</body>
+
+</html>
